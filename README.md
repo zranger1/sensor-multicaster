@@ -38,3 +38,8 @@ I don't guarantee that this will work correctly in complex multi-Pixelblaze setu
 handle a limited number of devices, and I no idea if it handles multicast correctly.  I'd suggest using an inexpensive 
 router as an AP in these cases -- it's faster, more reliable, more expandable and more secure. 
 
+#### Donation
+If this project saves you time and effort, please consider a small donation to help support further development.  Every donut, cup of coffee helps!  :-)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=YM9DKUT5V34G8)
+
