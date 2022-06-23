@@ -1,7 +1,7 @@
 ## sensor-multicaster
 
-Allows you to use a single Pixelblaze Sensor board to send data to multiple
-Pixelblazes via UDP multicast.  
+Allows you to use a single Pixelblaze Sensor board and a handful of inexpensive ESP8266s to send
+sensor data to multiple Pixelblazes via UDP multicast.  
 
 #### Requirements
 - A Pixelblaze
@@ -26,3 +26,15 @@ Connect the ESP82866 to the Pixelblaze's power (3v3) and ground pins, and connec
 on the ESP8266 to the RX pin on the Pixelblaze's expansion header. Set the _SSID and _PASS variables for your wifi network, then compile and upload.
 
 Once your whole system is powered up, sensor data from the sender will be continuously transmitted to all the receivers. Enjoy your new superpower!
+
+#### Notes
+In almost all cases, you will not need to change the multicast address or port.  The multicast address 224.0.0.12:6000 has
+worked on all the networks I've tested. 
+
+If it doesn't work on yours, first be sure your firewall isn't filtering multicast packets, then
+google "multicast address range",  and pick another address 'till you find one that works.
+
+I don't guarantee that this will work correctly in complex multi-Pixelblaze setups with the Pixelblaze providing the wifi access point.  The ESP32 can only
+handle a limited number of devices, and I no idea if it handles multicast correctly.  I'd suggest using an inexpensive 
+router as an AP in these cases -- it's faster, more reliable, more expandable and more secure. 
+
