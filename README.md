@@ -4,8 +4,8 @@ Allows you to use a single Pixelblaze Sensor board and a handful of inexpensive 
 sensor data to multiple Pixelblazes via UDP multicast.  
 
 #### Requirements
-- A Pixelblaze
-- A Sensor Board
+- One or more [Pixelblazes](https://electromage.com/pixelblaze)
+- A [Sensor Expansion Board](https://shop.electromage.com/products/pixelblaze-sensor-expansion-board)
 - An ESP8266 for the sending unit
 - Additional ESP8266s, one per receiver
 
